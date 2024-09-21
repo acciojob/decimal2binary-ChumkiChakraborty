@@ -1,5 +1,7 @@
 function decimalToBinary(num) {
-	 const decimalNumber = parseInt(document.getElementById('decimal-input').value, 10);
+	
+      // Parse the input number
+      const decimalNumber = parseInt(num, 10);
       
       // Check for valid input
       if (isNaN(decimalNumber) || decimalNumber < 0) {
@@ -13,8 +15,3 @@ function decimalToBinary(num) {
       // Display the result
       document.getElementById('result').innerText = `Binary equivalent: ${binaryNumber}`;
     }
-  //Write you code here
-  
-}
-
-window.decimalToBinary = decimalToBinary;
